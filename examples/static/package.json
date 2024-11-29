@@ -1,0 +1,14 @@
+{
+  "name": "static",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@zrender-helper/core": "workspace:*",
+    "zrender": "^5.6.0"
+  }
+}

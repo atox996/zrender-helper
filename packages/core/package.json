@@ -1,0 +1,21 @@
+{
+  "name": "@zrender-helper/core",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "types": "./types/index.d.ts",
+    "import": "./dist/index.es.js",
+    "require": "./dist/index.umd.js"
+  },
+  "scripts": {
+    "start": "concurrently --raw \"vite build --mode development --watch\" \"tsc --watch --emitDeclarationOnly\"",
+    "build": "vite build && tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "zrender": "^5.6.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
+  }
+}
